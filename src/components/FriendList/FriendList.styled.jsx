@@ -20,8 +20,7 @@ export const Status = styled.span`
 
 export const Name = styled.p`
   margin-left: ${p => p.theme.space[2]}px;
-  font-size: ${p => p.theme.fontSizes[3]}px;
-  font-weight: ${p => p.theme.fontWeights.semiBold};
+  font-size: ${p => p.theme.fontSizes[4]}px;  
 `;
 
 export const Photo = styled.img`

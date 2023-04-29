@@ -14,7 +14,7 @@ export default function FriendList({friends}) {
         id={id}
         isOnline={isOnline}
         avatar={avatar}
-        name={name} 
+        name={name}         
       />
    ))}
     </Box>
