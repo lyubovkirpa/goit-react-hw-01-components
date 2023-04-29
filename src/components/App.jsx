@@ -1,6 +1,8 @@
 import Section from 'components/Section/Section';
-import Profile from 'components/Profile/Profile';
 import user from 'data/user';
+import Profile from 'components/Profile/Profile';
+import Statistics from "components/Statistics/Statistics";
+import statistics from "data/statistics.json";
 
 
 export const App = () => {
@@ -14,7 +16,12 @@ export const App = () => {
           avatar={user.avatar}
           stats={user.stats}
         />
-      </Section>     
+      </Section>
+
+      <Section title="Statistics">
+        <Statistics title="Upload stats" stats={statistics} />
+      </Section>
+           
     </>
   );
 };
