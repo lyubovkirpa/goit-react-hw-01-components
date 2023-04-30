@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Box } from 'components/Box.styled';
-import {Status, Name, Photo} from "components/FriendList/FriendList.styled"
 import FriendListItem from './FriendListItem';
 
 
