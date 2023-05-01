@@ -9,7 +9,7 @@ export const Avatar = styled.img`
 
 export const ProfileText = styled.p`
   text-align: center;
-  font-size: ${p => p.theme.fontSizes[1]}px;
+  font-size: ${p => p.theme.fontSizes[3]}px;
   color: ${p => p.theme.colors.secondaryTextColor};
   margin-top: ${p => p.theme.space[1]}px;
   margin-bottom: ${p => p.theme.space[1]}px;
@@ -17,9 +17,10 @@ export const ProfileText = styled.p`
 
 export const Name = styled.p`
   ${ProfileText};
-  font-size: ${p => p.theme.fontSizes[4]}px;
+  font-size: ${p => p.theme.fontSizes[5]}px;
   font-weight: ${p => p.theme.fontWeights.semiBold};
   color: ${p => p.theme.colors.mainTextColor};
+  margin-bottom: ${p => p.theme.space[2]}px;
 `;
 
 
