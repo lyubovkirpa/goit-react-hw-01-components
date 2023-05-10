@@ -9,7 +9,7 @@ import {
 
 import { Box } from 'components/Box.styled';
 
-export default function Profile({ username, tag, location, avatar, stats }) {
+export default function Profile({ username, tag, location, avatar, stats: { followers, views, likes } }) {
   return (
     <Box
       display="flex"
@@ -38,15 +38,15 @@ export default function Profile({ username, tag, location, avatar, stats }) {
       <Box width="100%" display="flex" justifyContent="space-around" bg="rgb(0 0 0 / 10%)">
         <StatsItem>
           <span>Followers</span>
-          <StatsNumber>{stats.followers}</StatsNumber>
+          <StatsNumber>{followers}</StatsNumber>
         </StatsItem>
         <StatsItem>
           <span>Views</span>
-          <StatsNumber>{stats.views}</StatsNumber>
+          <StatsNumber>{views}</StatsNumber>
         </StatsItem>
         <StatsItem>
           <span>Likes</span>
-          <StatsNumber>{stats.likes}</StatsNumber>
+          <StatsNumber>{likes}</StatsNumber>
         </StatsItem>
       </Box>
     </Box>
@@ -62,5 +62,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };

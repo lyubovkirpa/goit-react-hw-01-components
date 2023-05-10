@@ -18,7 +18,7 @@ export default function FriendListItem({id, avatar, name, isOnline}) {
     alignItems="center"
     bg="componentBgColor"
     boxShadow="default">
-      <Status isOnline={isOnline}></Status>
+      <Status isOnline={isOnline}/>
       <Photo src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>
     </Box>
